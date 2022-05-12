@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
       type="image/png"
@@ -13,14 +14,133 @@
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
-  <body>
-    Samuel Green Available to Walk That sounds great. I’d be happy with that.
-    Could you send over some pictures of your dog, please? Here are a few
-    pictures. She’s a happy girl! Can you make it? She looks so happy! The time
-    we discussed works. How long shall I take her out for? 30 minute walk $29 1
-    hour walk $49 Type a message… Simple booking Stay in touch with our dog
-    walkers through the chat interface. This makes it easy to discuss
-    arrangements and make bookings. Once the walk has been completed you can
-    rate your walker and book again all through the chat.
+  <body class="flex justify-center">
+    <div class="gradient-1"></div>
+    <div class="gradient-2"></div>
+    <div class="md:w-[820px] w-[305px] flex ml-20 justify-between v-center">
+      <div class="w-[250px] border-8 border-white phone rounded-3xl app-bg">
+        <div class="head-bg rounded-t-2xl">
+          <div class="w-[130px] h-[20px] bg-white rounded-b-2xl m-auto"></div>
+          <div class="flex items-center w-[200px] ml-3 pb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              width="8px"
+            >
+              <path
+                fill="white"
+                d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+              />
+            </svg>
+            <img
+              src="/images/avatar.jpg"
+              alt="avatar"
+              width="25px"
+              class="mr-2 ml-2 border-2 border-white rounded-full"
+            />
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="font-medium text-white text-sm">Samuel Green</h1>
+              <p class="text-xs p">Available to Walk</p>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 128 512"
+              class="relative md:left-[60px] left-[40px] w-[4px]"
+            >
+              <path
+                fill="white"
+                d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="rounded-b-2xl">
+          <div class="text-[8px] p-2 w-[140px] left-p-color">
+            <p class="left-p-bg p-[7px] left-p-borders mb-2 shadow-md">
+              That sounds great. I’d be happy with that.
+            </p>
+            <p class="left-p-bg p-[7px] left-p-borders shadow-md">
+              Could you send over some pictures of your dog, please?
+            </p>
+          </div>
+          <div class="">
+            <div class="flex justify-end">
+              <img
+                src="/images/dog-image-1.jpg"
+                alt="dog-image-1"
+                width="40px"
+                class="m-1 rounded-xl"
+              />
+              <img
+                src="/images/dog-image-2.jpg"
+                alt="dog-image-2"
+                width="40px"
+                class="m-1 rounded-xl"
+              />
+              <img
+                src="/images/dog-image-3.jpg"
+                alt="dog-image-3"
+                width="40px"
+                class="m-1 rounded-xl"
+              />
+            </div>
+            <div class="right-p-color text-[8px] p-2 max-w-[140px] ml-[90px]">
+              <p class="right-p-borders p-[7px] mb-2 bg-white shadow-md">
+                Here are a few pictures. She’s a happy girl!
+              </p>
+              <p
+                class="right-p-borders p-[7px] bg-white w-[80px] shadow-md ml-[42px]"
+              >
+                Can you make it?
+              </p>
+            </div>
+          </div>
+          <div class="text-[8px] p-2 w-[140px] left-p-color">
+            <p class="left-p-bg p-[7px] left-p-borders shadow-md">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+          </div>
+          <div class="w-[160px] text-[10px] light-white m-2">
+            <div class="msg-bg p-1 flex items-center bot-msg mb-2">
+              <div class="circle mr-2"></div>
+              30 minute walk
+              <span class="font-bold text-[15px] text-white ml-4">$29</span>
+            </div>
+            <div class="msg-bg p-1 flex items-center bot-msg">
+              <div class="circle mr-2"></div>
+              1 hour walk
+              <span class="font-bold text-[15px] text-white ml-9">$49</span>
+            </div>
+          </div>
+          <div class="h-[40px] mb-2">
+            <input
+              type="text"
+              placeholder="Type a message…"
+              class="text-xs w-[210px] ml-3 p-2 rounded-full mb-2 mt-2"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              class="w-[10px] submit"
+            >
+              <path
+                fill="white"
+                d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-[450px] w-full box-right">
+        <h1 class="heading">Simple booking</h1>
+        <p class="para">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
